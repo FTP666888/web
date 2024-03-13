@@ -118,10 +118,26 @@ p {
   margin-left: 10rem;
 }
 
-/* planteles */
-
+/* Ubicacion */
 .ubicacion {
   display: flex;
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+.ubicacion__plantel {
+  color: #333;
+  font-family: "Arial", sans-serif;
+}
+.plantel__desc {
+  color: #666;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+.plantel__ubicacion {
+  margin-top: 2rem;
+  border-radius: 1rem;
 }
 
 @media (max-width: 800px) {
@@ -144,5 +160,11 @@ p {
   }
   .navegacion__links {
     display: block;
+  }
+  .ubicacion {
+    flex-direction: column;
+  }
+  .plantel__ubicacion {
+    width: 100%;
   }
 }
