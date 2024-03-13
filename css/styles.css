@@ -10,7 +10,9 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 body {
@@ -54,9 +56,11 @@ p {
   background-color: var(--amarillo);
   cursor: pointer;
 }
+.main {
+  background-color: var(--azul);
+  padding: 10%;
+}
 /*Para el index*/
-
-/* Estilos para el contenido principal */
 .contenido {
   background-color: var(--azul);
   display: grid;
@@ -112,6 +116,12 @@ p {
 }
 .carrera__descripcion {
   margin-left: 10rem;
+}
+
+/* planteles */
+
+.ubicacion {
+  display: flex;
 }
 
 @media (max-width: 800px) {
