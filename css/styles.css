@@ -67,7 +67,7 @@ p {
   gap: 1rem; /* Espacio entre las filas y columnas */
   justify-content: center;
   align-items: center; /* Centra verticalmente el contenido */
-  padding: 30rem;
+  padding: 30rem 0;
 }
 
 /* Estilos para las carreras */
