@@ -27,7 +27,7 @@
     </header>
     <main class="contenido">
       <fieldset class="contenido__fieldset">
-        <form class="fieldset__form" action="login" method="post">
+        <form class="fieldset__form" method="post">
           <div class="form__elements">
             <label for="uname">
               <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
@@ -188,7 +188,9 @@
             />
           </div>
           <div class="form__elements">
-            <button type="submit" value="Submit">Submit</button>
+            <button type="submit" value="Submit" onclick="validUser()">
+              Submit
+            </button>
           </div>
         </form>
       </fieldset>
