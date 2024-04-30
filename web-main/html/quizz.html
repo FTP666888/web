@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CECyTEQ</title>
+  </head>
+  <body>
+    <header class="contenedor">
+      <nav class="contenedor__navegacion">
+        <a href="/index.html">
+          <img
+            class="navegacion__logo"
+            src="/img/logocecyteq.png"
+            alt="logo CECyTEQ"
+          />
+        </a>
+        <a class="navegacion__links" href="carreras.html">Carreras</a>
+        <a class="navegacion__links" href="planteles.html">Planteles</a>
+        <a class="navegacion__links" href="profesores.html">Profesores</a>
+        <a class="navegacion__links" href="nosotros.html">Nosotros</a>
+        <a class="navegacion__links seleccionado" href="quizz.html">Quizz</a>
+        <h1 class="navegacion__tiempo">00:00</h1>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="quiz">
+        <form id="quizForm" action="">
+          <fieldset class="active">
+            <legend>Pregunta 1:</legend>
+            <label for="respuesta1">Respuesta 1</label>
+            <input
+              type="radio"
+              id="respuesta1"
+              name="pregunta1"
+              value="respuesta1"
+              required
+            />
+            <label for="respuesta2">Respuesta 2</label>
+            <input
+              type="radio"
+              id="respuesta2"
+              name="pregunta1"
+              value="respuesta2"
+              required
+            />
+            <!-- Agrega más respuestas si es necesario -->
+          </fieldset>
+
+          <fieldset>
+            <legend>Pregunta 2:</legend>
+            <label for="respuesta1">Respuesta 1</label>
+            <input
+              type="radio"
+              id="respuesta1"
+              name="pregunta2"
+              value="respuesta1"
+              required
+            />
+            <label for="respuesta2">Respuesta 2</label>
+            <input
+              type="radio"
+              id="respuesta2"
+              name="pregunta2"
+              value="respuesta2"
+              required
+            />
+            <!-- Agrega más respuestas si es necesario -->
+          </fieldset>
+
+          <!-- Agrega más preguntas si es necesario -->
+
+          <button type="button" id="prev">Anterior</button>
+          <button type="button" id="next">Siguiente</button>
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p class="centrado">Delgadillo Montoya Jafet Aldahir - 2024</p>
+    </footer>
+    <script src="/javascript/quizz.js"></script>
+  </body>
+</html>
