@@ -100,6 +100,7 @@ const myQuestions = [
 
 let currentQuestionIndex = 0;
 let timeLeft = 300; // 5 minutos en segundos
+let quizEnded = false;
 let userAnswers = new Array(myQuestions.length).fill(null);
 
 function showQuestion(questionIndex, questions, quizContainer) {
@@ -155,6 +156,7 @@ function nextQuestion() {
     resultsContainer.innerHTML =
       "Aciertos : " + numCorrect + " de " + myQuestions.length;
     nextButton.disabled = true;
+    quizEnded = true;
   }
 }
 
@@ -169,6 +171,7 @@ function prevQuestion() {
 }
 
 function updateTime() {
+  if (quizEnded) return;
   let minutes = Math.floor(timeLeft / 60);
   let seconds = timeLeft % 60;
   timeContainer.innerHTML =
