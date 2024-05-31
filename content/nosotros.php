@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,18 +16,18 @@
   <body>
     <header class="contenedor">
       <nav class="contenedor__navegacion">
-        <a href="/index.html">
+        <a href="../index.php">
           <img
             class="navegacion__logo"
-            src="/img/logocecyteq.png"
+            src="../img/logocecyteq.png"
             alt="logo CECyTEQ"
           />
         </a>
-        <a class="navegacion__links" href="carreras.html">Carreras</a>
-        <a class="navegacion__links" href="planteles.html">Planteles</a>
-        <a class="navegacion__links" href="profesores.html">Profesores</a>
+        <a class="navegacion__links" href="carreras.php">Carreras</a>
+        <a class="navegacion__links" href="planteles.php">Planteles</a>
+        <a class="navegacion__links" href="profesores.php">Profesores</a>
         <a class="navegacion__links seleccionado" href="#">Nosotros</a>
-        <a class="navegacion__links" href="quizz.html">Quizz</a>
+        <a class="navegacion__links" href="quizz.php">Quizz</a>
       </nav>
     </header>
     <main class="main">
@@ -40,7 +40,7 @@
           inventore labore at eos. l
         </p>
         <figure class="nosotros__img">
-          <img src="/img/CECyTE.png" alt="" />
+          <img src="../img/CECyTE.png" alt="" />
         </figure>
       </div>
     </main>
