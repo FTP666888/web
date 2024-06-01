@@ -1,21 +1,18 @@
 <?php
-require_once 'conn.php'; // Corrige la inclusión del archivo
+require_once 'conn.php';
 
-// Conecta a la base de datos (utiliza tu función conectarBaseDeDatos())
 $conexion = connectDB();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $usuario = $_POST["uname"];
     $contrasena = $_POST["pswd"];
 
-    // Consulta para verificar si el usuario y la contraseña coinciden
     $consulta = "SELECT id FROM usuarios WHERE username = '$usuario' AND passwd = '$contrasena'";
     $resultado = mysqli_query($conexion, $consulta);
 
     if (mysqli_num_rows($resultado) == 1) {
-        // Usuario autenticado correctamente
-        $_SESSION["usuario"] = $usuario; // Guarda el nombre de usuario en la sesión
-        header("Location: dashboard.php"); // Redirige a la página protegida
+        $_SESSION["usuario"] = $usuario;
+        header("Location: ../content/carreras.php");
     } else {
         echo "<script>
         alert('Usuario o contraseña incorrectos');
@@ -24,6 +21,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-// Cierra la conexión a la base de datos
 mysqli_close($conexion);
 ?>
