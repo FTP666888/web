@@ -27,7 +27,7 @@
     </header>
     <main class="contenido">
       <fieldset class="contenido__fieldset">
-        <form class="fieldset__form" method="post">
+        <form action="php/login.php" class="fieldset__form" method="post">
           <div class="form__elements">
             <label for="uname">
               <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
@@ -86,7 +86,7 @@
             />
           </div>
           <div class="form__elements">
-            <label class="elements_label" for="psw">
+            <label class="elements_label" for="pswd">
               <?xml version="1.0" ?><svg
                 height="32px"
                 id="svg8"
@@ -182,13 +182,13 @@
             <input
               type="password"
               placeholder="Enter Password"
-              name="psw"
+              name="pswd"
               id="pswd"
               required
             />
           </div>
           <div class="form__elements">
-            <button type="submit" value="Submit" onclick="validUser()">
+            <button type="submit" value="Submit">
               Submit
             </button>
           </div>
@@ -198,6 +198,5 @@
     <footer>
       <p class="centrado">Delgadillo Montoya Jafet Aldahir - 2024</p>
     </footer>
-    <script src="javascript/main.js"></script>
   </body>
 </html>
