@@ -1,9 +1,10 @@
 <?php
-function connectDB() {
+function connectDB()
+{
     $servidor = 'localhost';
     $usuario = 'root';
-    $contrasena = ''; 
-    $nombreBaseDeDatos = 'cecyteq'; 
+    $contrasena = '';
+    $nombreBaseDeDatos = 'cecyteq';
 
     // Intenta establecer la conexión
     $conexion = mysqli_connect($servidor, $usuario, $contrasena, $nombreBaseDeDatos);
@@ -16,4 +17,3 @@ function connectDB() {
     // Devuelve la conexión
     return $conexion;
 }
-?>

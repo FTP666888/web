@@ -1,5 +1,6 @@
 <?php
 require_once 'conn.php';
+session_start();
 
 $conexion = connectDB();
 
@@ -19,7 +20,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         window.location.href = '../index.php';
         </script>";
     }
+} else {
+    echo "<script>
+        alert('Metodo incorrecto');
+        window.location.href = '../index.php';
+        </script>";
 }
 
 mysqli_close($conexion);
-?>
